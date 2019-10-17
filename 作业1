@@ -1,0 +1,17 @@
+import random
+x=random.randint(0,99)
+n=30
+  while n>0:
+  y = int(input("Guess what I think?"))
+  if y==x:
+    print("you win")
+    break
+  elif y<x:
+    n=n-1
+    print("to small")
+    continue
+  else:
+    n=n-1
+    print("to big")
+    continue
+print('END')
